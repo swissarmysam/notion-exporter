@@ -1,4 +1,9 @@
-Forked as no longer maintained. Changes: GITHUB_TOKEN renamed to REPO_TOKEN.
+## Fork Notes
+
+- 100% of the credit must go to [igor-kupczynski](https://github.com/igor-kupczynski)
+- Forked as no longer maintained and used so want to ensure version is kept.
+- Changes: GITHUB_TOKEN renamed to REPO_TOKEN.
+- Releaseed as Action for use.
 
 # notion-exporter
 
