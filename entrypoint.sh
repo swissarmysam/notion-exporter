@@ -2,7 +2,7 @@
 set -u -e
 
 # Set through the github action:
-# - GITHUB_TOKEN
+# - REPO_TOKEN
 # - NOTION_TOKEN
 # - FORCE_BRANCH
 # - GITHUB_REPOSITORY
@@ -26,10 +26,10 @@ fi
 # Use this user email https://github.com/actions
 git config --global user.email 41898282+github-actions[bot]@users.noreply.github.com
 git config --global user.name "Notion Exporter"
-git config --global github.token "${GITHUB_TOKEN}"
+git config --global github.token "${REPO_TOKEN}"
 
 echo ":: Cloning github.com/${GITHUB_REPOSITORY} ${BRANCH} into ${REPO}"
-git clone --branch "${BRANCH}" "https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}" "$REPO"
+git clone --branch "${BRANCH}" "https://${GITHUB_ACTOR}:${REPO_TOKEN}@github.com/${GITHUB_REPOSITORY}" "$REPO"
 
 echo ":: Exporting ${PAGES} into ${OUTPUT}"
 /app/notion-exporter -pages "${PAGES}" -token "${NOTION_TOKEN}" -output "${OUTPUT}"
