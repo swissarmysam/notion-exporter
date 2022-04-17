@@ -1,5 +1,4 @@
-**UPDATE 2022-02-13**: No longer maintained, as I don't use notion anymore. Sorry for the inconvience.
-
+Forked as no longer maintained.
 
 # notion-exporter
 
