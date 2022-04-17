@@ -1,4 +1,4 @@
-module github.com/igor-kupczynski/notion-exporter
+module github.com/swissarmysam/notion-exporter
 
 go 1.16
 

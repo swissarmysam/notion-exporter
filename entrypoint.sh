@@ -45,7 +45,7 @@ if [ "$?" -ne "0" ]; then
     exit 0
 else
   echo ":: Push the commit"
-  git push "https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "${BRANCH}"
+  git push "https://${GITHUB_ACTOR}:${REPO_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "${BRANCH}"
 fi
 
 
